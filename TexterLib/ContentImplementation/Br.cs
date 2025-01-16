@@ -14,7 +14,7 @@ namespace TexterLib.ContentImplementation
             Width = width;
         }
 
-        public override string ToString()
+        public override string Render()
         {
             return "\r\n";
         }

@@ -24,7 +24,7 @@ namespace TexterLib.ContentImplementation
             _boxStyle = style;
         }
 
-        public override string ToString()
+        public override string Render()
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine(
@@ -34,7 +34,7 @@ namespace TexterLib.ContentImplementation
                 );
             foreach (AbstractContent content in _content)
                 content.Width = this.Width - 2;
-            string[] inner_content = base.ToString().Trim().Split("\r\n");
+            string[] inner_content = base.Render().Trim().Split("\r\n");
             foreach (string line in inner_content)
             {
                 sb.AppendLine(

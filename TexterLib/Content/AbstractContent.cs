@@ -14,6 +14,6 @@ namespace TexterLib.Content
             get { return _width; }
             set { _width = value; }
         }
-        public abstract override string ToString();
+        public abstract string Render();
     }
 }

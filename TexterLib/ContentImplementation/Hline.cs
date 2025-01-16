@@ -17,7 +17,7 @@ namespace TexterLib.ContentImplementation
             Width = width;
         }
 
-        public override string ToString()
+        public override string Render()
         {
             string line = string.Concat(Enumerable.Repeat(_pattern, Width));
             return line.Substring(0, Width) + "\r\n";

@@ -10,9 +10,9 @@ namespace TexterLib.ContentImplementation
     {
         public Center(int width) : base(width) { }
 
-        public override string ToString()
+        public override string Render()
         {
-            string[] inner_content = base.ToString().Trim().Split("\r\n");
+            string[] inner_content = base.Render().Trim().Split("\r\n");
             StringBuilder sb = new StringBuilder();
             foreach (string line in inner_content)
             {

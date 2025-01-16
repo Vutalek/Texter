@@ -19,7 +19,7 @@ namespace UnitTests
                 "5555\r\n" +
                 "66\r\n";
             AbstractContent test = new PlainText(width, text);
-            Assert.AreEqual(answer, test.ToString());
+            Assert.AreEqual(answer, test.Render());
         }
 
         [TestMethod]
@@ -32,7 +32,7 @@ namespace UnitTests
                 "   1234   \r\n";
             Center test = new Center(width);
             test.Add(new PlainText(width, text));
-            Assert.AreEqual(answer, test.ToString());
+            Assert.AreEqual(answer, test.Render());
         }
 
         [TestMethod]
@@ -42,7 +42,7 @@ namespace UnitTests
             int width = 10;
             string answer = "=-=-=-=-=-\r\n";
             AbstractContent test = new Hline(width, pattern);
-            Assert.AreEqual(answer, test.ToString());
+            Assert.AreEqual(answer, test.Render());
         }
 
         [TestMethod]
@@ -50,7 +50,7 @@ namespace UnitTests
         {
             string answer = "\r\n";
             AbstractContent test = new Br();
-            Assert.AreEqual(answer, test.ToString());
+            Assert.AreEqual(answer, test.Render());
         }
 
         [TestMethod]
@@ -75,7 +75,7 @@ namespace UnitTests
             container.Add(new Hline(width, pattern));
             container.Add(new Br());
             container.Add(new PlainText(width, text));
-            Assert.AreEqual(answer, container.ToString());
+            Assert.AreEqual(answer, container.Render());
         }
 
         [TestMethod]
@@ -100,7 +100,7 @@ namespace UnitTests
             test.Add(new Hline(width, pattern));
             test.Add(new Br());
             test.Add(new PlainText(width, text));
-            Assert.AreEqual(answer, test.ToString());
+            Assert.AreEqual(answer, test.Render());
         }
     }
 }

@@ -23,11 +23,11 @@ namespace TexterLib.ContentImplementation
             _content.Add(content);
         }
 
-        public override string ToString()
+        public override string Render()
         {
             StringBuilder sb = new StringBuilder();
             foreach (AbstractContent cont in _content)
-                sb.Append(cont.ToString());
+                sb.Append(cont.Render());
             return sb.ToString();
         }
     }

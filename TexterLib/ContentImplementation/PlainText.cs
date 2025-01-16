@@ -17,7 +17,7 @@ namespace TexterLib.ContentImplementation
             Width = width;
         }
 
-        public override string ToString()
+        public override string Render()
         {
             List<string> chunks = _text
                 .Chunk(Width)
