@@ -1,0 +1,19 @@
+﻿!docWidth 40
+!center 40
+[
+    !box 20 2
+    [
+        !center 20
+        [
+            ASD
+        ]
+        !br
+        Small asd!
+        !br
+    ]
+]
+!br
+!hline 40 =
+!br
+Plain text
+!end
