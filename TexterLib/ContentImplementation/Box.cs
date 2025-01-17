@@ -34,7 +34,7 @@ namespace TexterLib.ContentImplementation
                 );
             foreach (AbstractContent content in _content)
                 content.Width = this.Width - 2;
-            string[] inner_content = base.Render().Trim().Split("\r\n");
+            string[] inner_content = base.Render().TrimEnd().Split("\r\n");
             foreach (string line in inner_content)
             {
                 sb.AppendLine(
