@@ -30,7 +30,8 @@ namespace TexterLib.ContentImplementation
                 );
             foreach (Content.Content content in _content)
                 content.Width = this.Width - 2;
-            string[] inner_content = base.Render().TrimEnd().Split("\r\n");
+            string raw = base.Render();
+            string[] inner_content = raw.Substring(0, raw.LastIndexOf("\r\n")).Split("\r\n");
             foreach (string line in inner_content)
             {
                 sb.AppendLine(

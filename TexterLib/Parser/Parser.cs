@@ -55,7 +55,7 @@ namespace TexterLib.Parser
                         content.GetType().IsInstanceOfType(typeof(CompositeContent))
                         )
                         container_stack.Push((CompositeContent) content);
-                    else
+                    else if (container_stack.Count == 0)
                         _renderer.Render(content);
                     return;
                 }
