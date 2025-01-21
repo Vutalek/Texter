@@ -1,13 +1,8 @@
-﻿using TexterLib.Content;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 
 namespace TexterLib.ContentImplementation
 {
-    public class PlainText : AbstractContent
+    public class PlainText : Content.Content
     {
         private string _text;
 

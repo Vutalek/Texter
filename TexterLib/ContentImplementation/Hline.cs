@@ -1,13 +1,6 @@
-﻿using TexterLib.Content;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TexterLib.ContentImplementation
+﻿namespace TexterLib.ContentImplementation
 {
-    public class Hline : AbstractContent
+    public class Hline : Content.Content
     {
         string _pattern;
         

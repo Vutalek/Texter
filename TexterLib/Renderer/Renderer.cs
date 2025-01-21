@@ -1,17 +1,10 @@
-﻿using TexterLib.Content;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TexterLib.Renderer
+﻿namespace TexterLib.Renderer
 {
-    public abstract class AbstractRenderer
+    public abstract class Renderer
     {
         private bool is_alive;
 
-        public AbstractRenderer()
+        public Renderer()
         {
             is_alive = true;
         }
@@ -31,6 +24,6 @@ namespace TexterLib.Renderer
             is_alive = true;
         }
 
-        public abstract void Render(AbstractContent content);
+        public abstract void Render(Content.Content content);
     }
 }

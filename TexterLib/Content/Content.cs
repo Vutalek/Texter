@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TexterLib.Content
+﻿namespace TexterLib.Content
 {
-    public abstract class AbstractContent
+    public abstract class Content
     {
         private int _width;
         public int Width

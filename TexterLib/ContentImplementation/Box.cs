@@ -1,9 +1,5 @@
 ﻿using TexterLib.Content;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace TexterLib.ContentImplementation
 {
@@ -32,7 +28,7 @@ namespace TexterLib.ContentImplementation
                 new string(_styles[(int)_boxStyle][0], Width - 2) + 
                 _styles[(int)_boxStyle][3]
                 );
-            foreach (AbstractContent content in _content)
+            foreach (Content.Content content in _content)
                 content.Width = this.Width - 2;
             string[] inner_content = base.Render().TrimEnd().Split("\r\n");
             foreach (string line in inner_content)
