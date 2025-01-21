@@ -9,7 +9,8 @@ namespace TexterLib.ContentImplementation
 
         public override string Render()
         {
-            string[] inner_content = base.Render().Trim().Split("\r\n");
+            string raw = base.Render();
+            string[] inner_content = raw.Substring(0, raw.LastIndexOf("\r\n")).Split("\r\n");
             StringBuilder sb = new StringBuilder();
             foreach (string line in inner_content)
             {

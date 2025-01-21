@@ -6,7 +6,10 @@
         public int Width
         {
             get { return _width; }
-            set { _width = value; }
+        }
+        public virtual void Align(int width)
+        {
+            _width = width;
         }
         public abstract string Render();
     }

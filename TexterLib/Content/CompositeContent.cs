@@ -8,14 +8,21 @@ namespace TexterLib.Content
 
         public CompositeContent(int width)
         {
-            Width = width;
+            base.Align(width);
         }
 
         public void Add(Content content)
         {
             if (content.Width > Width)
-                content.Width = Width;
+                content.Align(Width);
             _content.Add(content);
+        }
+
+        public override void Align(int width)
+        {
+            base.Align(width);
+            foreach (Content content in _content)
+                content.Align(width);
         }
 
         public override string Render()

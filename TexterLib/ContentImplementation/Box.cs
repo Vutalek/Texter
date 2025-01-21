@@ -29,7 +29,7 @@ namespace TexterLib.ContentImplementation
                 _styles[(int)_boxStyle][3]
                 );
             foreach (Content.Content content in _content)
-                content.Width = this.Width - 2;
+                content.Align(Width - 2);
             string raw = base.Render();
             string[] inner_content = raw.Substring(0, raw.LastIndexOf("\r\n")).Split("\r\n");
             foreach (string line in inner_content)

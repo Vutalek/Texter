@@ -9,7 +9,7 @@ namespace TexterLib.ContentImplementation
         public PlainText(int width, string text)
         {
             _text = text;
-            Width = width;
+            base.Align(width);
         }
 
         public override string Render()

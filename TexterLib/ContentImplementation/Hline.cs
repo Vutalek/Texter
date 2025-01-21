@@ -7,7 +7,7 @@
         public Hline(int width, string pattern)
         {
             _pattern = pattern;
-            Width = width;
+            base.Align(width);
         }
 
         public override string Render()

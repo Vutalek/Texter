@@ -4,7 +4,7 @@
     {
         public Br(int width = 10) 
         {
-            Width = width;
+            base.Align(width);
         }
 
         public override string Render()
