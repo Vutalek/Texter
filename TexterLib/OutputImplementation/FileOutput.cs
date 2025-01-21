@@ -1,4 +1,5 @@
-﻿using TexterLib.Output;
+﻿using System.Text;
+using TexterLib.Output;
 
 namespace TexterLib.OutputImplementation
 {
@@ -14,7 +15,7 @@ namespace TexterLib.OutputImplementation
 
         public void Open()
         {
-            _stream = File.CreateText(_path);
+            _stream = new StreamWriter(File.Open(_path, FileMode.Create), Encoding.Unicode);
         }
 
         public void Write(string str)
