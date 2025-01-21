@@ -2,19 +2,14 @@
 using TexterLib.InputImplementation;
 using TexterLib.Parser;
 using TexterLib.Content;
-using TexterLib.ContentImplementation;
 using TexterLib.Renderer;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using TexterLib.ContentFactory;
 
 namespace UnitTests
 {
-    public class MockRenderer : AbstractRenderer
+    public class MockRenderer : Renderer
     {
-        public override void Render(AbstractContent content)
+        public override void Render(Content content)
         {
             Console.Write(content.Render());
         }
@@ -27,7 +22,7 @@ namespace UnitTests
         public void ParseTest()
         {
             IInput input = new FileInput("../../../TestFiles/ParseTest.txt");
-            Parser par = new Parser(new ContentFactoryImplementation(), new MockRenderer());
+            Parser par = new Parser(new ContentFactory(), new MockRenderer());
             input.Open();
             string s = null;
             while ((s = input.ReadLine()) != null)

@@ -1,9 +1,12 @@
 ﻿!docWidth 40
-!center 40
+!auto box 2 2
+!auto hline 2 =
+
+!center
 [
-    !box 20 2
+    !box 20
     [
-        !center 20
+        !center
         [
             ASD
         ]
@@ -13,7 +16,8 @@
     ]
 ]
 !br
-!hline 40 =
+!hline
 !br
 Plain text
+
 !end

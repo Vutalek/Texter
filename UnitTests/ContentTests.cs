@@ -18,7 +18,7 @@ namespace UnitTests
                 "4444\r\n" +
                 "5555\r\n" +
                 "66\r\n";
-            AbstractContent test = new PlainText(width, text);
+            Content test = new PlainText(width, text);
             Assert.AreEqual(answer, test.Render());
         }
 
@@ -41,7 +41,7 @@ namespace UnitTests
             string pattern = "=-";
             int width = 10;
             string answer = "=-=-=-=-=-\r\n";
-            AbstractContent test = new Hline(width, pattern);
+            Content test = new Hline(width, pattern);
             Assert.AreEqual(answer, test.Render());
         }
 
@@ -49,7 +49,7 @@ namespace UnitTests
         public void BrTest()
         {
             string answer = "\r\n";
-            AbstractContent test = new Br();
+            Content test = new Br();
             Assert.AreEqual(answer, test.Render());
         }
 
