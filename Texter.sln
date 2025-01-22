@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TexterLib", "TexterLib\TexterLib.csproj", "{4CAE27CC-788F-450C-997A-D9A8B610EC0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TexterLib", "TexterLib\TexterLib.csproj", "{4CAE27CC-788F-450C-997A-D9A8B610EC0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TexterApp", "TexterApp\TexterApp.csproj", "{45C5ED38-52AE-4736-BBDD-6642EC3D548C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TexterApp", "TexterApp\TexterApp.csproj", "{45C5ED38-52AE-4736-BBDD-6642EC3D548C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{D724741B-65A8-4515-A538-C372DE5052A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "UnitTests\UnitTests.csproj", "{D724741B-65A8-4515-A538-C372DE5052A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
